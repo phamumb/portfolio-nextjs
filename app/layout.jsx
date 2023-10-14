@@ -14,11 +14,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/assets/favicon.png" />
       </head>
       <body>
-        <main className="app dark:bg-dark-gray">
+        <div className="dark:bg-dark-gray">
+        <main className="app">
           <DarkModeToggle />
           <NavBar />
           {children}
         </main>
+        </div>
       </body>
     </html>
   );
