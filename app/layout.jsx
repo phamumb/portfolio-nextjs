@@ -1,9 +1,10 @@
 import "@styles/globals.css";
 import NavBar from "@components/NavBar";
+import DarkModeToggle from "@components/DarkModeToggle";
 
 export const metadata = {
-  title: "Luat Pham's Portfolio",
-  description: "My Portfolio",
+  title: "Luat Pham",
+  description: "Luat Pham's Portfolio",
 };
 
 export default function RootLayout({ children }) {
@@ -12,8 +13,9 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/assets/favicon.png" />
       </head>
-      <body className="dark:dark-gray">
-        <main className="app ">
+      <body>
+        <main className="app dark:bg-dark-gray">
+          <DarkModeToggle />
           <NavBar />
           {children}
         </main>
