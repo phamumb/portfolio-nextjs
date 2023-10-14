@@ -13,13 +13,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/assets/favicon.png" />
       </head>
-      <body>
-        <div className="dark:bg-dark-gray">
+      <body className="dark:bg-dark-gray">
         <main className="app">
           <NavBar />
           {children}
         </main>
-        </div>
       </body>
     </html>
   );

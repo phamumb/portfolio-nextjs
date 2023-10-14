@@ -6,10 +6,11 @@ import { useState } from "react";
 const DarkModeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleDarkMode = (checked) => {
-    if (document.body.classList.contains("dark")) {
-      document.body.classList.remove("dark");
+    var htmlTag = document.getElementsByTagName("html")[0];
+    if (htmlTag.classList && htmlTag.classList.contains("dark")) {
+      htmlTag.classList.remove("dark");
     } else {
-      document.body.classList.add("dark");
+      htmlTag.classList.add("dark");
     }
     setIsDarkMode(checked);
   };
