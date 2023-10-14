@@ -7,11 +7,7 @@ const DarkModeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleDarkMode = (checked) => {
     var htmlTag = document.getElementsByTagName("html")[0];
-    if (htmlTag.classList && htmlTag.classList.contains("dark")) {
-      htmlTag.classList.remove("dark");
-    } else {
-      htmlTag.classList.add("dark");
-    }
+    htmlTag.classList.toggle('dark')
     setIsDarkMode(checked);
   };
   return (
