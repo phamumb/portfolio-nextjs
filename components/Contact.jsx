@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center gap-4">
       <div className="md:text-xl text-lg font-semibold">Get In Touch</div>
-      <div className="md:text-sm text-xs text-gray-400 text-center max-w-lg">
+      <div className="md:text-base text-xs text-gray-400 text-center max-w-lg">
         Although I'm not currently looking for freelance opportunities, my inbox
         is always open. Whether for a potential project or just to say hi, I'll
         try my best to answer your email!
