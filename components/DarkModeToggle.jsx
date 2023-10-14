@@ -16,10 +16,8 @@ const DarkModeToggle = () => {
   return (
     <DarkModeSwitch
       style={{
-        marginBottom: "2rem",
-        position: "fixed",
-        bottom: "1rem",
-        right: "2rem",
+        marginTop: "1rem",
+        alignSelf: "end"
       }}
       checked={isDarkMode}
       onChange={toggleDarkMode}

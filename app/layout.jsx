@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
       <body>
         <div className="dark:bg-dark-gray">
         <main className="app">
-          <DarkModeToggle />
           <NavBar />
           {children}
         </main>
